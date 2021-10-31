@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.myMargin{
+    margin-top: 25px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 450px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+.login{
+    margin: 90px;  
+}
+.inMargin{
+    margin-top: 25px;
+    margin-right: none;
+}
+.sinMargin{
+    margin-top: 10px;
+    margin-right: none;
+}
