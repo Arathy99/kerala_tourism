@@ -9,14 +9,14 @@
       <div class="row login">
         <div class="col-lg-2 sinMargin"></div>
         <div class="col-lg-4 sinMargin">
-          <img src="images/color.jpg" alt="">
+          <img src="images/color.jpg" alt="" height="500px" width="500px">
         </div>
         <div class="col-lg-1 sinMargin"></div>
         <div class="col-lg-3 sinMargin">
            <div class="card text-center">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="login.html">Active</a>
+                        <a class="nav-link " aria-current="page" href="login.html">Log In</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Sign Up</a>
@@ -24,29 +24,35 @@
                 </ul>
            </div>
            <div class="ol d-flex justify-content-center">
-                <form>
+                <form name="sign" action="login.html" onsubmit="return validate();">
                     <div class="form-group"><br>
                         <h4 class="card-title">Sign up</h4>
-                        <input type="text" class="form-control" id="Name"  placeholder="Enter name" style="width:300px">
-                        <br/>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email " style="width:300px">
+                        
                     </div>
-
+                    <label for="error" id="error"></label>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width:300px">
-                    </div><br/>
-                    
+                        <input type="text" class="form-control" id="number"  placeholder="Enter phoneNo" style="width:300px">
+                    </div>
+                    <label for="error" id="error2"></label>
                     <div class="form-group">
                         <input type="password" class="form-control" id="InputPassword1" placeholder="Password"style="width:300px">
+                    </div>
+                    <label for="error" id="error1"></label>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="InputPassword2" placeholder="Confirm Password"style="width:300px">
+                        <label for="error" id="error3"></label><br>
                         <small id="emailHelp" class="form-text text-muted">Already have an account? <a href="login.html">Log In.</a></small> 
                     </div><br>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="home.html" class="btn btn-primary" role="button" data-bs-toggle="button">Return</a>
                 </form>
             </div>
         </div>
         <div class="col-lg-3 sinmargin"></div>
         </div> 
       </div>
-        
+     <script src="sign_up.js"></script> 
     </body>
 </html>

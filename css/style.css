@@ -25,3 +25,12 @@
     margin-top: 10px;
     margin-right: none;
 }
+.head{
+
+  
+    width: 55%;
+    border: 3px solid #f00800;
+    padding: 10px;
+    margin-top: 10%;
+   /* margin-left: 20%; */
+}
